@@ -14,6 +14,7 @@
 		ACF6EEAD242E515F00C2A3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF6EEAB242E515F00C2A3D5 /* LaunchScreen.storyboard */; };
 		ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEAF242E515F00C2A3D5 /* main.m */; };
 		ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */; };
+		ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		ACF6EEAF242E515F00C2A3D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACF6EEBC242E545200C2A3D5 /* TTVMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVMovie.h; sourceTree = "<group>"; };
 		ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovie.m; sourceTree = "<group>"; };
+		ACF6EEC1242E593100C2A3D5 /* TTVMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVMovieController.h; sourceTree = "<group>"; };
+		ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		ACF6EE9C242E515E00C2A3D5 /* Flicks Search -ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEBF242E589800C2A3D5 /* Controllers */,
 				ACF6EEB8242E539000C2A3D5 /* Model */,
 				ACF6EEB7242E518400C2A3D5 /* Storyboard */,
 				ACF6EEB6242E517600C2A3D5 /* Resources */,
@@ -98,6 +102,23 @@
 				ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACF6EEBF242E589800C2A3D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC0242E591300C2A3D5 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACF6EEC0242E591300C2A3D5 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC1242E593100C2A3D5 /* TTVMovieController.h */,
+				ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF6EE9F242E515E00C2A3D5 /* AppDelegate.m in Sources */,
+				ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */,
 				ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */,
 				ACF6EEA2242E515E00C2A3D5 /* SceneDelegate.m in Sources */,
 				ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */,

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSString * title;
 @property (nonatomic, readonly) NSNumber * rating;
 @property (nonatomic, readonly) NSString * movieDescription;
-@property (nonatomic, readonly) NSString * posterPath;
+@property (nonatomic, readonly, nullable) NSString * posterPath;
 
 -(instancetype)initWithTitle:(NSString *)title
                       rating:(NSNumber *)rating
