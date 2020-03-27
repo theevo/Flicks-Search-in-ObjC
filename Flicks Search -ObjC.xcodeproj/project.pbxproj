@@ -13,6 +13,10 @@
 		ACF6EEAA242E515F00C2A3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF6EEA9242E515F00C2A3D5 /* Assets.xcassets */; };
 		ACF6EEAD242E515F00C2A3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF6EEAB242E515F00C2A3D5 /* LaunchScreen.storyboard */; };
 		ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEAF242E515F00C2A3D5 /* main.m */; };
+		ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */; };
+		ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */; };
+		ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */; };
+		ACF6EECC242E6C0500C2A3D5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		ACF6EEAC242E515F00C2A3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF6EEAE242E515F00C2A3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF6EEAF242E515F00C2A3D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACF6EEBC242E545200C2A3D5 /* TTVMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVMovie.h; sourceTree = "<group>"; };
+		ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovie.m; sourceTree = "<group>"; };
+		ACF6EEC1242E593100C2A3D5 /* TTVMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVMovieController.h; sourceTree = "<group>"; };
+		ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovieController.m; sourceTree = "<group>"; };
+		ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flicks Search -ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 		ACF6EE9C242E515E00C2A3D5 /* Flicks Search -ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEBF242E589800C2A3D5 /* Controllers */,
+				ACF6EEB8242E539000C2A3D5 /* Model */,
 				ACF6EEB7242E518400C2A3D5 /* Storyboard */,
 				ACF6EEB6242E517600C2A3D5 /* Resources */,
 			);
@@ -67,6 +80,7 @@
 		ACF6EEB6242E517600C2A3D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */,
 				ACF6EE9D242E515E00C2A3D5 /* AppDelegate.h */,
 				ACF6EE9E242E515E00C2A3D5 /* AppDelegate.m */,
 				ACF6EEA0242E515E00C2A3D5 /* SceneDelegate.h */,
@@ -85,6 +99,50 @@
 				ACF6EEA6242E515E00C2A3D5 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ACF6EEB8242E539000C2A3D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEBC242E545200C2A3D5 /* TTVMovie.h */,
+				ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACF6EEBF242E589800C2A3D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC4242E62A300C2A3D5 /* View Controllers */,
+				ACF6EEC0242E591300C2A3D5 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACF6EEC0242E591300C2A3D5 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC1242E593100C2A3D5 /* TTVMovieController.h */,
+				ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		ACF6EEC4242E62A300C2A3D5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC8242E69AD00C2A3D5 /* SubView */,
+				ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ACF6EEC8242E69AD00C2A3D5 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,11 +171,13 @@
 		ACF6EE92242E515E00C2A3D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TTV;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Theo Vora";
 				TargetAttributes = {
 					ACF6EE99242E515E00C2A3D5 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -157,9 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */,
 				ACF6EE9F242E515E00C2A3D5 /* AppDelegate.m in Sources */,
+				ACF6EECC242E6C0500C2A3D5 /* MovieTableViewCell.swift in Sources */,
+				ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */,
 				ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */,
 				ACF6EEA2242E515E00C2A3D5 /* SceneDelegate.m in Sources */,
+				ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Flicks Search -ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +372,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Resources/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Flicks Search -ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +392,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Resources/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
