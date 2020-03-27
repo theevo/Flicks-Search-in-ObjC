@@ -78,6 +78,7 @@
 		ACF6EEB6242E517600C2A3D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */,
 				ACF6EE9D242E515E00C2A3D5 /* AppDelegate.h */,
 				ACF6EE9E242E515E00C2A3D5 /* AppDelegate.m */,
 				ACF6EEA0242E515E00C2A3D5 /* SceneDelegate.h */,
@@ -128,10 +129,17 @@
 		ACF6EEC4242E62A300C2A3D5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEC8242E69AD00C2A3D5 /* SubView */,
 				ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */,
-				ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ACF6EEC8242E69AD00C2A3D5 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Controllers/View Controllers/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Resources/Flicks Search -ObjC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Controllers/View Controllers/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Resources/Flicks Search -ObjC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
