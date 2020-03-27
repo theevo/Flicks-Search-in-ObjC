@@ -36,7 +36,11 @@
     NSString *title = dictionary[@"title"];
     NSNumber *rating = dictionary[@"vote_average"];
     NSString *movieDescription = dictionary[@"overview"];
-    NSString *posterPath = dictionary[@"poster_path"];
+    NSString *posterPath = nil;
+    
+    if ( [dictionary[@"poster_path"] isKindOfClass:[NSString class]] ) {
+        posterPath = dictionary[@"poster_path"];
+    }
     
     return [self initWithTitle:title rating:rating movieDescription:movieDescription posterPath:posterPath];
 }

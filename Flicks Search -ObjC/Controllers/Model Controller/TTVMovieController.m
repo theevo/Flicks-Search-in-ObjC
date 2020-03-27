@@ -73,35 +73,38 @@ static NSString * const searchKeyTMDB = @"query";
 {
     NSString *posterPath = movie.posterPath;
     
-    NSURL *posterURL = [[NSURL URLWithString:posterURLString] URLByAppendingPathComponent:posterPath];
-    
-    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithURL:posterURL resolvingAgainstBaseURL:true];
-    
-    NSURL *finalURL = [urlComponents URL];
-    
-    NSLog(@"%@", finalURL);
-    
-    [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    if (posterPath) {
         
-        if (error)
-        {
-            NSLog(@"Error fetching posts: %@", error);
-            completion(nil);
-            return;
-        }
+        NSURL *posterURL = [[NSURL URLWithString:posterURLString] URLByAppendingPathComponent:posterPath];
         
-        if (!data)
-        {
-            NSLog(@"Error. No data was returned: %@", error);
-            completion(nil);
-            return;
-        }
+        NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithURL:posterURL resolvingAgainstBaseURL:true];
         
-        UIImage *posterImage = [[UIImage alloc] initWithData:data];
-                
-        completion(posterImage);
+        NSURL *finalURL = [urlComponents URL];
         
-    }] resume];
-}
+        NSLog(@"%@", finalURL);
+        
+        [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
+            if (error)
+            {
+                NSLog(@"Error fetching posts: %@", error);
+                completion(nil);
+                return;
+            }
+            
+            if (!data)
+            {
+                NSLog(@"Error. No data was returned: %@", error);
+                completion(nil);
+                return;
+            }
+            
+            UIImage *posterImage = [[UIImage alloc] initWithData:data];
+            
+            completion(posterImage);
+            
+        }] resume];
+    }
+} // end fetchPosterForMovie
 
 @end
