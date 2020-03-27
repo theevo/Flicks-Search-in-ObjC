@@ -16,6 +16,7 @@
 		ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */; };
 		ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */; };
 		ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */; };
+		ACF6EECC242E6C0500C2A3D5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovieController.m; sourceTree = "<group>"; };
 		ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flicks Search -ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		ACF6EEC8242E69AD00C2A3D5 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EECB242E6C0500C2A3D5 /* MovieTableViewCell.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */,
 				ACF6EE9F242E515E00C2A3D5 /* AppDelegate.m in Sources */,
+				ACF6EECC242E6C0500C2A3D5 /* MovieTableViewCell.swift in Sources */,
 				ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */,
 				ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */,
 				ACF6EEA2242E515E00C2A3D5 /* SceneDelegate.m in Sources */,
