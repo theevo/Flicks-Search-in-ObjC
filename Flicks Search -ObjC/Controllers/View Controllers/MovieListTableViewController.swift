@@ -63,5 +63,9 @@ extension MovieListTableViewController: UISearchBarDelegate {
                 print("Error: no movies were returned from API call.")
             }
         }
+        
+        // dismiss keyboard
+        searchBar.resignFirstResponder()
+        
     }
 } // end extension
