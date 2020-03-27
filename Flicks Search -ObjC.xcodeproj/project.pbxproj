@@ -15,6 +15,7 @@
 		ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEAF242E515F00C2A3D5 /* main.m */; };
 		ACF6EEBE242E545200C2A3D5 /* TTVMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */; };
 		ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */; };
+		ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		ACF6EEBD242E545200C2A3D5 /* TTVMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovie.m; sourceTree = "<group>"; };
 		ACF6EEC1242E593100C2A3D5 /* TTVMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVMovieController.h; sourceTree = "<group>"; };
 		ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTVMovieController.m; sourceTree = "<group>"; };
+		ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flicks Search -ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		ACF6EEBF242E589800C2A3D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6EEC4242E62A300C2A3D5 /* View Controllers */,
 				ACF6EEC0242E591300C2A3D5 /* Model Controller */,
 			);
 			path = Controllers;
@@ -119,6 +123,15 @@
 				ACF6EEC2242E593100C2A3D5 /* TTVMovieController.m */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		ACF6EEC4242E62A300C2A3D5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6EEC6242E62F600C2A3D5 /* MovieListTableViewController.swift */,
+				ACF6EEC5242E62F600C2A3D5 /* Flicks Search -ObjC-Bridging-Header.h */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 				TargetAttributes = {
 					ACF6EE99242E515E00C2A3D5 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -192,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF6EEC7242E62F600C2A3D5 /* MovieListTableViewController.swift in Sources */,
 				ACF6EE9F242E515E00C2A3D5 /* AppDelegate.m in Sources */,
 				ACF6EEC3242E593100C2A3D5 /* TTVMovieController.m in Sources */,
 				ACF6EEB0242E515F00C2A3D5 /* main.m in Sources */,
@@ -336,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Flicks Search -ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,6 +360,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Controllers/View Controllers/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -352,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Flicks Search -ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +380,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poundsand.Flicks-Search--ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flicks Search -ObjC/Controllers/View Controllers/Flicks Search -ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
